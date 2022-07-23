@@ -38,8 +38,8 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: true,
       ),
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             '${heading!.ceil()}°',
@@ -59,7 +59,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 Transform.rotate(angle: ((heading??0)*(pi /180) * -1),
                 child: Image.asset('assets/compass.png'),
                 )
-
               ],
             ),
           ),
